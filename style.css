@@ -1,0 +1,23 @@
+/* Thiết lập ảnh nền cho Hero Section */
+.hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* Padding cho các section để tránh bị navbar che khuất khi cuộn */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Mở rộng hiệu ứng bóng đổ cho Material Card khi di chuột */
+.card.hoverable {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card.hoverable:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-5px);
+}
